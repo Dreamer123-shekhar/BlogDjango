@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<style>
+
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href="/static/style.css" />
+    <title> Django! Saturday Afternoon April - 24</title>
+</head>
+
+<div class = "heading-class">
+    <h2>Register to enjoy Shekhar BBQ cookout</h2>
+</div>
+
+<body style = "background : url('/static/pic1.jpg');background-size=100% 100%;">
+
+
+
+
+<form action="/new/" method="post">
+    {% csrf_token %}
+
+
+
+        <table align="center">
+        <tr>
+            <th width="200">
+                <input type="text" placeholder="Full Name" name="name1" required>
+            </th>
+        </tr>
+
+
+
+        <tr>
+                <th colspan="2">
+                    <button type="submit">Submit</button>
+                </th>
+            </tr>
+
+
+
+    </table>
+
+</form>
+            <h3 align="center">
+                <font color ="#6495ed" face="chiller">
+                    {{ message }}
+                </font>
+            </h3>
+</body>
+</html>
